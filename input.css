@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply font-montserrat;
+  }
+  img,
+  svg {
+    @apply inline;
+  }
+  .nav {
+    @apply px-3 fixed bg-white w-full z-40;
+  }
+  .nav-cont {
+    @apply container flex justify-between items-center mx-auto;
+  }
+  .nav-link {
+    @apply ml-4 p-1 hidden md:inline hover:text-primary/80;
+  }
+  .nav-link svg {
+    @apply hover:fill-primary/80;
+  }
+  .mobile-menu {
+    @apply fixed h-screen w-full z-30 bg-white top-0 text-base flex flex-col justify-around items-center p-4 pb-24 font-semibold translate-x-full -translate-y-full transition-transform duration-1000 z-50;
+  }
+  .mobile-menu.show {
+    @apply translate-x-0 -translate-y-0;
+  }
+  .nav-link.active,
+  .mobile-menu a.active {
+    @apply font-bold text-primary;
+  }
+
+  .service {
+    @apply p-5 text-center flex-1;
+  }
+  .services-container {
+    @apply flex flex-col md:flex-row gap-y-8 my-6;
+  }
+  .service img {
+    @apply w-16;
+  }
+  .service-name,
+  .project-name {
+    @apply font-bold text-lg my-2;
+  }
+  .service-desc,
+  .project-desc {
+    @apply text-sm text-gray-700;
+  }
+
+  .project {
+    @apply bg-white text-center rounded-sm w-80;
+  }
+  .project-img {
+    @apply h-64  bg-cover bg-no-repeat bg-center;
+  }
+  .project-details {
+    @apply p-4 border-t;
+  }
+  .clients img {
+    @apply grayscale hover:grayscale-0 w-56;
+  }
+  .footer {
+    @apply bg-black/90 px-4 py-20 text-white;
+  }
+  .footer-cont {
+    @apply flex flex-col md:flex-row container mx-auto justify-around;
+  }
+  .footer-cont img {
+    @apply mb-3;
+  }
+  .footer-cont p {
+    @apply text-gray-400;
+  }
+  .footer-cont > div {
+    @apply flex flex-col gap-2 max-w-xs px-5 justify-between mt-4 md:mt-0;
+  }
+  .footer-cont > div h3 {
+    @apply mb-2 text-lg font-montserratAlt font-bold;
+  }
+  .footer-cont span {
+    @apply text-gray-300;
+  }
+  .footer-cont .it-title {
+    @apply font-semibold text-white;
+  }
+  .footer-icons {
+    @apply flex  gap-4;
+  }
+}
