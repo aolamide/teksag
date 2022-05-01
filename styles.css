@@ -679,9 +679,13 @@ img, svg{
 
 .project-img{
   height: 16rem;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.project:first-child .project-img{
+  background-size: cover;
 }
 
 .project-details{
@@ -1285,8 +1289,8 @@ img, svg{
   background-image: url(./assets/logos/teep.jpeg);
 }
 
-.bg-\[url\(\.\/assets\/logos\/poulina\.jpeg\)\]{
-  background-image: url(./assets/logos/poulina.jpeg);
+.bg-\[url\(\.\/assets\/logos\/paybymint\.png\)\]{
+  background-image: url(./assets/logos/paybymint.png);
 }
 
 .bg-\[url\(\.\/assets\/logos\/trikord\.jpeg\)\]{
@@ -1311,6 +1315,10 @@ img, svg{
 
 .bg-\[url\(\.\/assets\/energy-bg-5\.jpg\)\]{
   background-image: url(./assets/energy-bg-5.jpg);
+}
+
+.bg-\[url\(\.\/assets\/logos\/25dollarmall\.jpeg\)\]{
+  background-image: url(./assets/logos/25dollarmall.jpeg);
 }
 
 .bg-cover{
@@ -1430,6 +1438,10 @@ img, svg{
   color: rgb(255 255 255 / 0.7);
 }
 
+.text-primary\/90{
+  color: rgb(218 51 60 / 0.9);
+}
+
 .text-primary{
   --tw-text-opacity: 1;
   color: rgb(218 51 60 / var(--tw-text-opacity));
@@ -1466,6 +1478,11 @@ img, svg{
 
 .hover\:fill-primary\/80:hover{
   fill: rgb(218 51 60 / 0.8);
+}
+
+.hover\:underline:hover{
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 @media (min-width: 640px){

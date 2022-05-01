@@ -60,7 +60,10 @@
     @apply bg-white text-center rounded-sm w-80 shadow-lg;
   }
   .project-img {
-    @apply h-64  bg-cover bg-no-repeat bg-center;
+    @apply h-64  bg-contain bg-no-repeat bg-center;
+  }
+  .project:first-child .project-img {
+    @apply bg-cover;
   }
   .project-details {
     @apply p-4 border-t;
