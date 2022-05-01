@@ -57,7 +57,7 @@
   }
 
   .project {
-    @apply bg-white text-center rounded-sm w-80;
+    @apply bg-white text-center rounded-sm w-80 shadow-lg;
   }
   .project-img {
     @apply h-64  bg-cover bg-no-repeat bg-center;
