@@ -253,12 +253,20 @@
           <label for="message">Message <sup>*</sup></label>
           <textarea required id="message" rows="10"></textarea>
         </div>
+        <p
+          class="text-red-500 font-bold text-center mb-4 max-w-sm"
+          id="contact-error"
+        ></p>
         <div class="form-group">
           <button type="submit" class="btn-submit">
-            Submit
+            <span>Submit</span>
             <img src="../assets/send.png" width="29px" alt="Send" />
           </button>
         </div>
+        <p
+          class="text-green-800 font-bold text-center mt-2 max-w-sm"
+          id="contact-success"
+        ></p>
       </form>
     </section>
     <section class="bg-white">
@@ -359,4 +367,5 @@
     </footer>
   </body>
   <script src="../nav.js"></script>
+  <script src="./contact.js"></script>
 </html>
