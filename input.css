@@ -5,9 +5,11 @@
 @tailwind utilities;
 
 @layer components {
+  html,
   body {
-    @apply font-montserrat;
+    @apply font-montserrat scroll-smooth;
   }
+
   img,
   svg {
     @apply inline;
