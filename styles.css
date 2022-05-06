@@ -1328,6 +1328,10 @@ img, svg{
   background-image: url(./assets/energy-bg-5.jpg);
 }
 
+.bg-\[url\(\.\/assets\/logos\/buildium\.jpeg\)\]{
+  background-image: url(./assets/logos/buildium.jpeg);
+}
+
 .bg-\[url\(\.\/assets\/logos\/25dollarmall\.jpeg\)\]{
   background-image: url(./assets/logos/25dollarmall.jpeg);
 }
