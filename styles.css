@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
 
 /*
-! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -32,6 +32,7 @@
 2. Prevent adjustments of font size after orientation changes in iOS.
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
 */
 
 html {
@@ -46,6 +47,8 @@ html {
   /* 3 */
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
 }
 
 /*
@@ -412,54 +415,13 @@ video {
   height: auto;
 }
 
-*, ::before, ::after{
-  --tw-border-spacing-x: 0;
-  --tw-border-spacing-y: 0;
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
-  --tw-scroll-snap-strictness: proximity;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
-  --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
 }
 
-::-webkit-backdrop{
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -587,13 +549,13 @@ video {
   }
 }
 
-html, 
+html,
   body{
   scroll-behavior: smooth;
   font-family: Montserrat, sans-serif;
 }
 
-img, 
+img,
   svg{
   display: inline;
 }
@@ -707,7 +669,7 @@ img,
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.nav-link.active, 
+.nav-link.active,
   .mobile-menu a.active{
   font-weight: 700;
   --tw-text-opacity: 1;
@@ -738,7 +700,7 @@ img,
   width: 4rem;
 }
 
-.service-name, 
+.service-name,
   .project-name{
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -747,7 +709,7 @@ img,
   font-weight: 700;
 }
 
-.service-desc, 
+.service-desc,
   .project-desc{
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -972,7 +934,7 @@ img,
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
-.form-group input, 
+.form-group input,
   .form-group textarea{
   width: 100%;
   max-width: 24rem;
@@ -983,7 +945,7 @@ img,
   padding: 0.5rem;
 }
 
-.form-group input:focus, 
+.form-group input:focus,
   .form-group textarea:focus{
   border-color: rgb(218 51 60 / 0.8);
   outline: 2px solid transparent;
@@ -1013,37 +975,20 @@ img,
   background-color: rgb(218 51 60 / 0.8);
 }
 
-@-webkit-keyframes bounce{
-  0%, 100%{
-    transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50%{
-    transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
 @keyframes bounce{
   0%, 100%{
     transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
   }
 
   50%{
     transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
 
 .form-group .btn-submit:disabled{
-  -webkit-animation: bounce 1s infinite;
-          animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
   cursor: not-allowed;
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
@@ -1051,7 +996,6 @@ img,
 
 @media (min-width: 768px){
   .form-group .btn-submit{
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
@@ -1418,6 +1362,10 @@ img,
   background-image: url(./assets/energy-bg-5.jpg);
 }
 
+.bg-\[url\(\.\/assets\/logos\/scaleup-full\.jpeg\)\]{
+  background-image: url(./assets/logos/scaleup-full.jpeg);
+}
+
 .bg-\[url\(\.\/assets\/logos\/kgfx\.jpeg\)\]{
   background-image: url(./assets/logos/kgfx.jpeg);
 }
@@ -1432,6 +1380,10 @@ img,
 
 .bg-cover{
   background-size: cover;
+}
+
+.bg-contain{
+  background-size: contain;
 }
 
 .bg-fixed{
@@ -1590,8 +1542,7 @@ img,
 }
 
 .underline{
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 
 .shadow-lg{
@@ -1614,8 +1565,7 @@ img,
 }
 
 .hover\:underline:hover{
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 
 @media (min-width: 640px){
