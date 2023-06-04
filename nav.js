@@ -8,3 +8,7 @@ openMenu.addEventListener("click", () => {
 closeMenu.addEventListener("click", () => {
   mobileMenu.classList.remove("show");
 });
+
+function hideMenu() {
+  mobileMenu.classList.remove("show");
+}
