@@ -165,3 +165,19 @@
     @apply text-gray-700 text-base mb-2;
   }
 }
+
+/*BOOTCAMP PAGE*/
+.bootcamp {
+  @apply py-10 px-5 container mx-auto
+}
+
+.bootcamp-why {
+  @apply my-7
+}
+.bootcamp-why h3 {
+  @apply font-semibold
+}
+
+.bootcamp-why img {
+  @apply w-10 h-10
+}
