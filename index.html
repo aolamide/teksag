@@ -46,7 +46,7 @@
         <div class="nav-links">
           <a href="#" class="nav-link active">HOME</a>
           <a href="./about/" class="nav-link">ABOUT</a>
-          <a href="./projects/" class="nav-link">PROJECTS</a>
+          <a href="./products/" class="nav-link">PRODUCTS</a>
           <a href="#news" class="nav-link">NEWS</a>
           <a href="./bootcamp/" class="nav-link">BOOTCAMP</a>
           <a href="./contact/" class="nav-link">CONTACT</a>
@@ -129,7 +129,7 @@
       /></a>
       <a href="#" class="active">HOME</a>
       <a href="./about/">ABOUT</a>
-      <a href="./projects/">PROJECTS</a>
+      <a href="./products/">PRODUCTS</a>
       <a onclick="hideMenu()" href="#news">NEWS</a>
       <a href="./bootcamp/">BOOTCAMP</a>
       <a href="./contact/">CONTACT</a>
@@ -308,6 +308,22 @@
           class="flex flex-col md:flex-row items-center justify-center gap-6"
         >
           <div class="project">
+            <div
+                    class="project-img bg-[url(./assets/teksag-bootcamp2.jpeg)] bg-cover"
+            ></div>
+            <div class="project-details">
+              <h4 class="project-name">
+                <a
+                        class="text-primary/90 hover:underline"
+                        href="./bootcamp"
+                >Teksag Tech Bootcamp</a
+                >
+              </h4>
+              <p class="project-desc">Virtual Tech - Bootcamp</p>
+              <br />
+            </div>
+          </div>
+          <div class="project">
             <div class="project-img bg-[url(./assets/logos/teep.jpeg)]"></div>
             <div class="project-details">
               <h4 class="project-name">
@@ -325,24 +341,6 @@
           </div>
           <div class="project">
             <div
-              class="project-img bg-[url(./assets/logos/paybymint.png)]"
-            ></div>
-            <div class="project-details">
-              <h4 class="project-name">
-                <a
-                  class="text-primary/90 hover:underline"
-                  href="https://pbmint.herokuapp.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >PayByMint</a
-                >
-              </h4>
-              <p class="project-desc">Consultancy for NFT marketplace</p>
-              <br />
-            </div>
-          </div>
-          <div class="project">
-            <div
               class="project-img bg-[url(./assets/logos/trikord.jpeg)]"
             ></div>
             <div class="project-details">
@@ -353,9 +351,9 @@
             </div>
           </div>
         </div>
-        <a href="./projects"
+        <a href="./products"
           ><button class="block mx-auto mt-6 p-5 bg-black text-white font-bold">
-            VIEW ALL PROJECTS
+            VIEW ALL PRODUCTS
           </button></a
         >
       </div>
@@ -364,7 +362,16 @@
       <div class="container mx-auto">
         <h2 class="text-2xl font-bold mb-6">LATEST NEWS</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <a href="https://businessworld.africa/introducing-the-next-generation-of-online-utility-payment-services-teep/" rel="noreferrer noopener" target="_blank" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg">
+
+          <a href="https://medium.com/@goldnslim/unlocking-opportunities-key-advantages-of-teksag-tech-bootcamp-d831e4892e92" rel="noreferrer noopener" target="_blank" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg hover:opacity-70">
+            <img src="./assets/teksag-bootcamp2.jpeg" alt="News 2" class="w-full h-48 object-cover">
+            <div class="p-4">ˀ
+              <h3 class="text-lg md:text-xl font-bold mb-2">Unlocking Opportunities: Key Advantages of Teksag Tech Bootcamp</h3>
+              <p class="text-gray-700">In the contemporary digital landscape, the significance of educational technology (ed tech) and vir... </p>
+            </div>
+          </a>
+
+          <a href="https://businessworld.africa/introducing-the-next-generation-of-online-utility-payment-services-teep/" rel="noreferrer noopener" target="_blank" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg hover:opacity-70">
             <img src="./assets/news/teep.jpeg" alt="News 1" class="w-full h-48 object-cover">
             <div class="p-4">
               <h3 class="text-lg md:text-xl font-bold mb-2">Introducing the Next Generation of Online Utility payment Services: TEEP</h3>
@@ -372,9 +379,9 @@
             </div>
           </a>
 
-          <a href="https://insight.ng/press/teksag-energy-ltd-wins-best-technology-start-up-in-west-africa/" rel="noreferrer noopener" target="_blank" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg">
+          <a href="https://insight.ng/press/teksag-energy-ltd-wins-best-technology-start-up-in-west-africa/" rel="noreferrer noopener" target="_blank" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg hover:opacity-70">
             <img src="./assets/news/award.png" alt="News 2" class="w-full h-48 object-cover">
-            <div class="p-4">
+            <div class="p-4">ˀ
               <h3 class="text-lg md:text-xl font-bold mb-2">Teksag Energy LTD Wins Best Technology Start-Up in West Africa, Recognized for Innovation and Impact</h3>
               <p class="text-gray-700">Teksag Energy LTD , a leading technology start-up specializing in software development, analyti.... </p>
             </div>
@@ -442,8 +449,7 @@
         <div>
           <img src="./assets/logos/teksag-new.png" width="100px" alt="Teksag" />
           <p>
-            We provide analytic solutions to small, medium, and large
-            organizations, guiding them in every step of the journey.
+            We provide development and analytics solutions to small medium and large organizations guiding them through in every step in their journey.
           </p>
         </div>
         <div>
@@ -472,7 +478,8 @@
           <h3>LINKS</h3>
           <a href="/about">About</a>
           <a href="#services">Services</a>
-          <a href="/projects">Projects</a>
+          <a href="/products">Products</a>
+          <a href="/bootcamp">Bootcamp</a>
           <a href="/contact">Contact</a>
           <div class="footer-icons">
             <a
